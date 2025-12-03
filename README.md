@@ -99,8 +99,5 @@ Ajusta los ejemplos al lenguaje y biblioteca que uses en el proyecto.
 - Mantener copias del .sql fuera del directorio público del servidor.
 - Documentar la versión de MySQL esperada (incompatibilidades posibles entre versiones).
 
-Contacto / siguientes pasos
-- Si lo deseas, puedo:
-  - Añadir este README al repositorio y abrir un PR.
   - Crear un archivo `.env.example` con las variables de conexión.
   - Adaptar las instrucciones al framework/lenguaje específico del proyecto si me indicas cuál usan.
