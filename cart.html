@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Play-Coop - Carrito</title>
+  <!-- Asegúrate de que la carpeta CSS/ exista y contenga styles.css -->
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-left">
+      <div class="header-logo"><span>Play&Coop</span> Market</div>
+    </div>
+    <div class="header-right user-info">
+      <div class="icon-container">
+        <a href="home.html" id="home-link" class="home-btn">Home</a>
+        <span id="greeting" style="margin-left:10px">Hola, <strong id="user-name">Usuario</strong></span>
+        <a href="#" id="logout-link" class="logout-link" style="margin-left:12px">Salir</a>
+        <a href="cart.html" id="cart-link" class="shopping-btn" style="margin-left:12px">🛒 <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="limited-container" style="padding: 30px;">
+    <h2 class="section-title">Tu carrito</h2>
+
+    <div class="cart-sidebar" style="max-width:900px; margin:0 auto;">
+      <!-- Contenedor usado por script.js -->
+      <div id="cart-items" class="cart-items-list">
+        <!-- items renderizados desde JS/script.js -->
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Total</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button id="checkout-btn" class="btn-primary btn-checkout" onclick="finalizarCompra()">Finalizar compra</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px 0;">&copy; Play-Coop</p>
+  </footer>
+
+  <!-- Asegúrate de que JS/script.js exista y sea la versión que maneja auth, loadProducts y carrito -->
+  <script src="JS/script.js"></script>
+</body>
+</html>

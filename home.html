@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Play-Coop - Home</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-left">
+      <div class="header-logo"><span>Play&Coop</span> Market</div>
+    </div>
+    <div class="header-right user-info">
+      <div class="icon-container">
+        <span id="greeting">Hola, <strong id="user-name">Usuario</strong></span>
+        <a href="#" id="logout-link" class="logout-link">Salir</a>
+        <!-- Añadimos id cart-link para que JS lo reconozca -->
+        <a href="cart.html" id="cart-link" class="shopping-btn">🛒 <span id="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="limited-container">
+    <section id="products-section">
+      <h2 class="section-title">Catálogo de Juegos</h2>
+      <div id="product-list" class="products-grid">
+        <!-- Las tarjetas se renderizan desde JS/script.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; padding:20px 0;">&copy; Play-Coop</p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Play&Coop</title>
+    
+    <meta name="color-scheme" content="light only">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/styles.css"> 
+</head>
+<body>
+
+    <main class="login-wrapper">
+        <div class="logo-section">
+            <div class="logo-container">
+                <img src="https://i.ibb.co/3mbWztFX/imagen-2025-12-01-234611997.png" 
+                     alt="Logo Play&Coop" 
+                     class="dice-icon"
+                     style="filter: none !important; fill: initial !important; color: initial !important;"> 
+                <h1>Play&Coop</h1>
+            </div>
+            <p class="tagline">Diviértete en comunidad</p>
+        </div>
+
+        <form class="login-form" id="login-form" onsubmit="event.preventDefault(); handleLogin();">
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Usuario" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+            
+            <button type="submit" class="btn-primary">
+                Entrar
+            </button>
+
+            <p id="login-error" class="text-muted" style="color:#ff6b35; display:none; margin-top:8px;"></p>
+        </form>
+
+        <p style="margin-top:16px; color:#a0a4b0; font-size:0.9rem;">
+            Credenciales de prueba: <strong>admin / admin</strong>
+        </p>
+    </main>
+    
+    <script src="JS/script.js"></script>
+    <script>
+      // handleLogin: lógica de login mínima para pruebas locales.
+      // Guarda playCoopUser en localStorage y redirige a home.html.
+      function handleLogin() {
+        const errEl = document.getElementById('login-error');
+        errEl.style.display = 'none';
+        const u = (document.getElementById('username') || {}).value || '';
+        const p = (document.getElementById('password') || {}).value || '';
+
+        // Credenciales de prueba
+        const TEST_USER = 'admin';
+        const TEST_PASS = 'admin';
+
+        // Validación mínima: admin/admin o cualquier usuario con contraseña no vacía
+        if ((u === TEST_USER && p === TEST_PASS) || (u.trim().length > 0 && p.length > 0)) {
+          // Guardar sesión mínima
+          try {
+            localStorage.setItem('playCoopUser', JSON.stringify({ user: u, loggedAt: Date.now() }));
+          } catch (e) {
+            console.warn('No se pudo guardar la sesión en localStorage:', e);
+          }
+          // Redirigir a home (ruta relativa)
+          window.location.href = 'home.html';
+        } else {
+          errEl.innerText = 'Usuario o contraseña incorrectos.';
+          errEl.style.display = 'block';
+        }
+      }
+
+      // Si ya existe sesión activa, redirigir automáticamente a home
+      (function () {
+        try {
+          const s = localStorage.getItem('playCoopUser');
+          if (s) {
+            // Evitar bucles si ya estamos en main.html; redirigir de inmediato
+            window.location.href = 'home.html';
+          }
+        } catch (e) {
+          // no hacemos nada
+        }
+      })();
+    </script>
+</body>
+</html>

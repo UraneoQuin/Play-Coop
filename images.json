@@ -1,0 +1,21 @@
+[
+  { "product_id": 1, "product_name": "Monopoly", "image_url": "https://i.ibb.co/4nS4sPN7/shopping.webp" },
+  { "product_id": 2, "product_name": "Ajedrez", "image_url": "https://i.ibb.co/Kp3czQG9/descarga.webp" },
+  { "product_id": 3, "product_name": "Damas Chinas", "image_url": "https://i.ibb.co/DHJsdhRT/shopping-1.webp" },
+  { "product_id": 4, "product_name": "Parqués", "image_url": "https://i.ibb.co/yBMkxbjT/descarga-1.webp" },
+  { "product_id": 5, "product_name": "Scrabble", "image_url": "https://i.ibb.co/jqG1WXv/descarga-2.webp" },
+  { "product_id": 6, "product_name": "Jenga", "image_url": "https://i.ibb.co/5W7dZfFc/descarga-3.webp" },
+  { "product_id": 7, "product_name": "Uno", "image_url": "https://i.ibb.co/1JbwJ9sp/descarga-4.webp" },
+  { "product_id": 8, "product_name": "Risk", "image_url": "https://i.ibb.co/qM1kvb5n/descarga.webp" },
+  { "product_id": 9, "product_name": "Catan", "image_url": "https://i.ibb.co/xPsH1Rb/descarga-5.webp" },
+  { "product_id": 10, "product_name": "Twister", "image_url": "https://i.ibb.co/VphxqgWk/images.webp" },
+  { "product_id": 11, "product_name": "Trivial Pursuit", "image_url": "https://i.ibb.co/N25FnBMy/images.jpg" },
+  { "product_id": 12, "product_name": "Clue", "image_url": "https://i.ibb.co/VphxqgWk/images.webp" },
+  { "product_id": 13, "product_name": "Domino", "image_url": "https://i.ibb.co/3YzgS9hn/shopping-2.webp" },
+  { "product_id": 14, "product_name": "Backgammon", "image_url": "https://i.ibb.co/RGzs04Lt/descarga-7.webp" },
+  { "product_id": 15, "product_name": "Pictionary", "image_url": "https://i.ibb.co/ycHRKV2V/images-1.jpg" },
+  { "product_id": 16, "product_name": "Bingo", "image_url": "https://i.ibb.co/nWYZsY4/descarga-8.webp" },
+  { "product_id": 17, "product_name": "Labyrinth", "image_url": "https://i.ibb.co/1Y3s751T/images-2.webp" },
+  { "product_id": 18, "product_name": "Carcassonne", "image_url": "https://i.ibb.co/VYsBj07d/images-2.jpg" },
+  { "product_id": 19, "product_name": "Yahtzee", "image_url": "https://i.ibb.co/vC1DfJ8T/images-3.jpg" }
+]
